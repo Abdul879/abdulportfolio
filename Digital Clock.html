@@ -4,120 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" href="Web logo.png" type="Image/x-Icon">
-   
+    <title>Digital Clock</title>
+    <link rel="icon" href="Pictures/weblogo.jpg" type="Image/x-Icon">
+    <link rel="stylesheet" href="nav 1.css">
+
 </head>
 <style>
-    .top {
-                display: flex;
-                margin-top: -30px;
-            }
-    
-            #Logo {
-                margin-top: 50px;
-                margin-left: 50px;
-                height: 80px;
-            }
-            nav .main-nav {
-                width: 600px;
-                text-align: center;
-                margin-top: 50px;
-                height: 60px;
-                margin-left: 580px;
-            }
-    
-            nav .main-nav li {
-                list-style-type: none;
-                display: inline-block;
-                font-size: x-large;
-            }
-    
-            nav .main-nav li a {
-                color: black;
-                text-decoration: none;
-                font-weight: bold;
-    
-            }
-    
-            body section .main-nav li {
-                color: rgb(16, 15, 15);
-            }
-    
-            nav .main-nav li a:hover {
-                color: rgb(31, 151, 226);
-                transition: .3s;
-            }
-            .header {
-                font-family: 'Open Sans', sans-serif;
-                background-color: #f2f2f2;
-                color: #222;
-                font-family: 'Montserrat', sans-serif;
-                font-size: 4.5em;
-    
-                line-height: 1.4em;
-            }
-            .Dig{
-                margin-left: 80px;
-            }
-    </style>
-    
+    .Dig {
+        margin-left: 80px;
+    }
+</style>
+
 
 <body style="background-color:  rgb(246, 217, 179);">
-    <section class="header">
-        <span class="top">
-            <div id="Logo">
-                <a href="Index.html"><img src="Logo.png" width="60px" ; style="border-radius: 50%;"></a>
-            </div>
-                <nav>
-                    <ul class="main-nav">
-                        
-                            <li><a href="Index.html">Home</a></li>
-                            <li><a href="About.html">About Me</a></li>
-                            <li><a href="Projects.html">Projects</a></li>
-                            <li><a href="Certifications.html">Certifications</a></li>
-                            <li><a href="Contact.html">Contact</a></li>
-                        
-                    </ul>
-                </nav>
-        </span>
-        </section>
+    <span class="Header">
+        <a href="index.html"><img src="Pictures/Logo.png" width="60px" ; style="border-radius: 50%;">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="About.html">About</a>
+                </li>
+                <li>
+                    <a href="Projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="Certifications.html">Certifications</a>
+                </li>
+                <li>
+                    <a href="contact1.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </span>
+
     <sectioin style="color: darksalmon;" <h1>
-            <center style="font-size:xx-large;">Digital Clock</center>
+        <center style="font-size:xx-large;">Digital Clock</center>
         </h1>
-        <center><img src="Dgital clock.gif"></center>
+        <center><img src="Pictures/Dgital clock.gif"></center>
     </sectioin>
     <br><br>
     <hr>
     <section class="Dig">
-    <p>
-        <b style="font-size: larger;">Project Overview : </b> Showing Digital Clock Time
+        <p>
+            <b style="font-size: larger;">Project Overview : </b> Showing Digital Clock Time
+            <br>
+            <br>
+        <h2>Introduction: </h2>
+        <p style="font-size: large;">
+            In this C program, the digital clock will start with the time 00:00:00. Then it will work like a digital
+            clock
+            where it will show the time with hours, minutes, and second.
+            <br><br>
+        <h2> 1) Header Files: </h2>
+        <p> First of all importing required header files, stdio,time,stdlib,unistd this are the header files </p>
         <br>
+        <h2>2) Initilize Variables:</h2>
+        <p> Next step is to initilize the variables hours, minutes and seconds is equal to zero(0)</p>
         <br>
-    <h2>Introduction: </h2>
-    <p style="font-size: large;">
-        In this C program, the digital clock will start with the time 00:00:00. Then it will work like a digital clock
-        where it will show the time with hours, minutes, and second.
-        <br><br>
-    <h2> 1) Header Files: </h2>
-    <p> First of all importing required header files, stdio,time,stdlib,unistd this are the header files </p>
-    <br>
-    <h2>2) Initilize Variables:</h2>
-    <p> Next step is to initilize the variables hours, minutes and seconds is equal to zero(0)</p>
-    <br>
-    <h2>3) Loops: </h2>
-    <p>Here we are using the while loop statment, to make iteration as the condition becomes true.</p>
-    <h2>4) Logics & Conditions: </h2>
-    <p>Increase the Seconds variable with increment operator, put conditon if it equals to 60, then increase minutes
-        and reset sseconds to (0) <br>
-        Increase the Minutes variable with increment operator, put conditon if it equals to 60, then increase hour and
-        reset sseconds to (0) <br>
-        increase hours variable and check if it is equal to 24, then rest hours to 0.
-    </p>
-    <h2>5) Conclusion: </h2>
-    <p>A digital clock is an alternative to a traditional analogue clock. This type of clock shows numbers to display
-        the time in a digital format,<br> such as on a watch, phone or an alarm clock. This can be in both 12 and 24-hour
-        formats.</p>
+        <h2>3) Loops: </h2>
+        <p>Here we are using the while loop statment, to make iteration as the condition becomes true.</p>
+        <h2>4) Logics & Conditions: </h2>
+        <p>Increase the Seconds variable with increment operator, put conditon if it equals to 60, then increase
+            minutes
+            and reset sseconds to (0) <br>
+            Increase the Minutes variable with increment operator, put conditon if it equals to 60, then increase
+            hour and
+            reset sseconds to (0) <br>
+            increase hours variable and check if it is equal to 24, then rest hours to 0.
+        </p>
+        <h2>5) Conclusion: </h2>
+        <p>A digital clock is an alternative to a traditional analogue clock. This type of clock shows numbers to
+            display
+            the time in a digital format,<br> such as on a watch, phone or an alarm clock. This can be in both 12
+            and 24-hour
+            formats.</p>
     </section>
 
     <br><br><br>
